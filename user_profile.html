@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ - TutorLink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="user_profile.css">
+</head>
+<body>
+<div class="save-toast" id="saveToast"></div>
+<div class="mobile-container">
+    <div class="header-orange">
+        <button class="btn-logout-header" onclick="location.href='login.html?logout=1'"><i class="fa-solid fa-right-from-bracket"></i> ออก</button>
+        <div class="avatar-wrapper">
+            <div class="avatar-big" id="avatarDisplay"><i class="fa-solid fa-user"></i></div>
+            <label class="avatar-edit-btn" for="avatarInput"><i class="fa-solid fa-camera"></i></label>
+            <input type="file" id="avatarInput" accept="image/*" style="display:none;">
+        </div>
+        <div style="font-size:18px; font-weight:500;">User</div>
+        <div style="font-size:12px; opacity:0.9;">user@gmail.com</div>
+    </div>
+    <div class="content">
+        <div class="section-card">
+            <h4>ข้อมูลการเรียน <button class="btn-edit-section" id="editBtn" onclick="toggleEdit()">แก้ไข</button></h4>
+            <div id="infoList"></div>
+        </div>
+        <div class="section-card">
+            <a href="my_classes.html" class="menu-item"><div class="menu-icon" style="background:#FFF0F0;color:#FF6B6B;"><i class="fa-solid fa-book-open"></i></div><div style="flex:1;font-size:14px;color:#444;">บทเรียนของฉัน</div><i class="fa-solid fa-chevron-right menu-arrow"></i></a>
+            <a href="schedule.html" class="menu-item"><div class="menu-icon" style="background:#E3F2FD;color:#1565C0;"><i class="fa-solid fa-calendar-days"></i></div><div style="flex:1;font-size:14px;color:#444;">ตารางเรียน</div><i class="fa-solid fa-chevron-right menu-arrow"></i></a>
+            <a href="hot_board.html" class="menu-item"><div class="menu-icon" style="background:#FFF3E0;color:#EF6C00;"><i class="fa-solid fa-trophy"></i></div><div style="flex:1;font-size:14px;color:#444;">HoT Board</div><i class="fa-solid fa-chevron-right menu-arrow"></i></a>
+            <a href="preference.html" class="menu-item"><div class="menu-icon" style="background:#E8F5E9;color:#2E7D32;"><i class="fa-solid fa-search"></i></div><div style="flex:1;font-size:14px;color:#444;">ค้นหาติวเตอร์</div><i class="fa-solid fa-chevron-right menu-arrow"></i></a>
+        </div>
+        <button class="btn-logout" onclick="location.href='login.html?logout=1'"><i class="fa-solid fa-right-from-bracket"></i> ออกจากระบบ</button>
+    </div>
+    <div class="bottom-nav">
+        <a href="index.html"><i class="fa-solid fa-home"></i></a>
+        <a href="preference.html"><i class="fa-solid fa-search"></i></a>
+        <a href="my_classes.html"><i class="fa-solid fa-book-open"></i></a>
+        <a href="user_profile.html" class="active"><i class="fa-solid fa-user"></i></a>
+    </div>
+</div>
+<script src="user_profile.java"></script>
+</body>
+</html>

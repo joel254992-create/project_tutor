@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="tutor_dashboard.css">
+</head>
+<body>
+<div class="save-toast" id="saveToast"></div>
+<div class="mobile-container">
+    <div class="header-orange">
+        <div class="header-top">
+            <div style="font-size:20px;font-weight:500;">Dashboard</div>
+            <button class="btn-logout" onclick="location.href='login.html?logout=1'"><i class="fa-solid fa-right-from-bracket"></i> ออกจากระบบ</button>
+        </div>
+        <div class="profile-row">
+            <div class="profile-avatar" id="profileAvatar"><i class="fa-solid fa-user"></i></div>
+            <div><div style="font-size:16px;font-weight:500;">Tutor Somchai</div><div style="font-size:12px;opacity:0.9;"><i class="fa-solid fa-star"></i> 4.9 • ติวเตอร์</div></div>
+        </div>
+    </div>
+    <div class="content" id="content"></div>
+    <div class="bottom-nav">
+        <a href="tutor_dashboard.html" class="active"><i class="fa-solid fa-home"></i></a>
+        <a href="schedule.html"><i class="fa-solid fa-calendar-days"></i></a>
+        <a href="hot_board.html"><i class="fa-solid fa-trophy"></i></a>
+        <a href="tutor_edit.html"><i class="fa-solid fa-user"></i></a>
+    </div>
+</div>
+<script src="tutor_dashboard.java"></script>
+</body>
+</html>

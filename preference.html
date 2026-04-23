@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาติวเตอร์</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="preference.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange">
+        <div class="header-title">ค้นหาติวเตอร์</div>
+        <div class="search-box"><i class="fa-solid fa-search"></i><input type="text" placeholder="ค้นหาวิชา หรือชื่อติวเตอร์......"></div>
+    </div>
+    <div class="content">
+        <div class="subject-bar"><div class="sub-tag active">ทั้งหมด</div><div class="sub-tag">คณิตศาสตร์</div><div class="sub-tag">ฟิสิกส์</div><div class="sub-tag">เคมี</div><div class="sub-tag">อังกฤษ</div></div>
+        <span class="section-title">กรองลักษณะของติวเตอร์</span>
+        <div id="filterContainer"></div>
+        <button type="button" class="btn-plus" onclick="addFilter()"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" class="btn-submit" onclick="submitFilters()">เสร็จสิ้น</button>
+    </div>
+    <div class="bottom-nav"><a href="index.html"><i class="fa-solid fa-home"></i></a><a href="preference.html" class="active"><i class="fa-solid fa-search"></i></a><a href="my_classes.html"><i class="fa-solid fa-book-open"></i></a><a href="user_profile.html"><i class="fa-solid fa-user"></i></a></div>
+</div>
+<script src="preference.java"></script>
+</body>
+</html>

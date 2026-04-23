@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลการสอน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="tutor_edit.css">
+</head>
+<body>
+<div class="save-toast" id="saveToast"></div>
+<div class="mobile-container">
+    <div class="header-orange">
+        <a href="tutor_dashboard.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+        <div class="avatar-wrapper">
+            <div class="header-avatar" id="avatarDisplay"><i class="fa-solid fa-user"></i></div>
+            <label class="avatar-edit-btn" for="avatarInput"><i class="fa-solid fa-camera"></i></label>
+            <input type="file" id="avatarInput" accept="image/*" style="display:none;">
+        </div>
+        <div style="font-size:16px; font-weight:500;">User</div>
+    </div>
+    <div class="content">
+        <div class="alert-box"><i class="fa-solid fa-circle-info"></i> ข้อมูลที่อัพเดทจะใช้คำนวณ Match Score แนะนำ...</div>
+        <span class="section-title"><i class="fa-solid fa-book"></i> วิชาที่สอน (เลือกได้หลายวิชา)</span>
+        <div class="form-card"><div class="chip-container" id="subjectChips"></div></div>
+        <span class="section-title"><i class="fa-solid fa-graduation-cap"></i> ระดับชั้น</span>
+        <div class="form-card">
+            <select class="form-select" id="levelSelect">
+                <option>มัธยมต้น</option>
+                <option>มัธยมปลาย</option>
+                <option>มหาวิทยาลัย</option>
+                <option>ทุกระดับ</option>
+            </select>
+        </div>
+        <span class="section-title"><i class="fa-solid fa-palette"></i> สไตล์การสอน (เลือกได้หลายสไตล์)</span>
+        <div class="form-card"><div class="chip-container" id="styleChips"></div></div>
+        <span class="section-title"><i class="fa-solid fa-money-bill"></i> ราคา</span>
+        <div class="form-card">
+            <label class="form-label">ราคาต่อชั่วโมง (บาท) — ช่วง 50-1000</label>
+            <input type="number" class="form-input" id="priceInput" value="200" min="50" max="1000">
+        </div>
+        <button class="btn-save" id="btnSave">บันทึกข้อมูล</button>
+    </div>
+</div>
+<script src="tutor_edit.java"></script>
+</body>
+</html>

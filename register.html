@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - TutorLink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange">
+        <a href="login.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i></a>
+        <i class="fa-solid fa-user-plus" style="font-size:40px; margin-bottom:8px;"></i>
+        <div class="header-title">สมัครสมาชิก</div>
+    </div>
+    <div class="content">
+        <div class="msg-error" id="errorMsg"></div>
+        <form id="registerForm">
+            <div class="input-group"><label class="input-label">ชื่อ-นามสกุล</label><input type="text" id="name" class="input-field" placeholder="กรอกชื่อ-นามสกุล" required></div>
+            <div class="input-group"><label class="input-label">อีเมล</label><input type="email" id="email" class="input-field" placeholder="กรอกอีเมล" required></div>
+            <div class="input-group"><label class="input-label">เบอร์โทรศัพท์</label><input type="tel" id="phone" class="input-field" placeholder="กรอกเบอร์โทรศัพท์"></div>
+            <div class="input-group"><label class="input-label">รหัสผ่าน</label><input type="password" id="password" class="input-field" placeholder="ตั้งรหัสผ่าน" required></div>
+            <label class="input-label">ประเภทผู้ใช้งาน</label>
+            <div class="role-selector">
+                <div class="role-btn active" onclick="pickRole(this,'student')"><i class="fa-solid fa-graduation-cap"></i><br>นักศึกษา</div>
+                <div class="role-btn" onclick="pickRole(this,'tutor')"><i class="fa-solid fa-chalkboard-teacher"></i><br>ติวเตอร์</div>
+            </div>
+            <input type="hidden" id="roleInput" value="student">
+            <button type="submit" class="btn-register">สมัครสมาชิก</button>
+            <div class="login-text">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></div>
+        </form>
+    </div>
+</div>
+<script src="register.java"></script>
+</body>
+</html>

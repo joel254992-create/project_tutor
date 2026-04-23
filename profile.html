@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Tutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+        <div class="profile-circle"><i class="fa-solid fa-user"></i></div>
+        <h2 style="margin:0; font-size:18px;" id="tutorName"></h2>
+        <div style="font-size:11px; opacity:0.9;" id="tutorSub"></div>
+    </div>
+    <div class="match-card"><div class="match-circle" id="matchPct"></div><div><div class="m-tag">วิชา 30%</div><div class="m-tag">ระดับ 20%</div><div class="m-tag">สไตล์ 20%</div><div class="m-tag">เวลา 20%</div><div class="m-tag">งบ 10%</div></div></div>
+    <div class="section-card"><h4>ข้อมูลการสอน</h4><div id="teachInfo"></div></div>
+    <div class="section-card"><h4>เลือกเวลาเรียน</h4><div class="time-pill-container"><div class="time-pill" onclick="pickT(this,'จ. 15:00-18:00')">จ. 15:00-18:00</div><div class="time-pill" onclick="pickT(this,'พ. 14:00-17:00')">พ. 14:00-17:00</div><div class="time-pill" onclick="pickT(this,'ศ. 16:00-18:00')">ศ. 16:00-18:00</div><div class="time-pill" onclick="pickT(this,'ส. 15:00-18:00')">ส. 15:00-18:00</div></div></div>
+    <div class="section-card"><h4>รีวิวจากนักเรียน</h4><div class="review-item" style="border:none; padding-top:0;"><div class="review-avatar"><i class="fa-solid fa-user"></i></div><div class="review-details"><p class="reviewer-name">น้องโป้งเหน่ง</p><div class="stars">★★★★★</div><p class="review-text">สอนดีเลยค่ะ ตีที่ยังไม่ตาย</p></div></div><div class="review-item"><div class="review-avatar orange"><i class="fa-solid fa-user"></i></div><div class="review-details"><p class="reviewer-name">น้องกิ๊กกี้</p><div class="stars">★★★★☆</div><p class="review-text">สอนเข้าใจมากเลยครับ แต่ออกจากห้องมาก็ลืมเลยครับ</p></div></div></div>
+    <div class="footer"><button class="btn-fav"><i class="fa-regular fa-heart"></i></button><button class="btn-book" onclick="book()">จองเรียน ———></button></div>
+</div>
+<script src="profile.java"></script>
+</body>
+</html>

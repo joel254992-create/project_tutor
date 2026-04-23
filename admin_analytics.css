@@ -1,0 +1,26 @@
+:root { --orange-grad: linear-gradient(180deg, #FF6B6B 0%, #FEB47B 100%); --soft-red: #FF6B6B; }
+* { box-sizing: border-box; font-family: 'Prompt', sans-serif; }
+body { margin: 0; background: #333; display: flex; justify-content: center; min-height: 100vh; }
+.mobile-container { width: 100%; max-width: 414px; min-height: 100vh; background: #F9F9F9; display: flex; flex-direction: column; padding-bottom: 80px; }
+.header-orange { background: var(--orange-grad); border-radius: 0 0 45px 45px; padding: 35px 25px; color: white; z-index: 2; position: relative; }
+.bottom-nav { position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 414px; height: 70px; background: white; border-top: 1px solid #eee; display: flex; justify-content: space-around; align-items: center; z-index: 100; }
+.bottom-nav a { color: #ccc; font-size: 22px; text-decoration: none; padding: 10px; }
+.bottom-nav a.active { color: #FFB0B0; }
+.header-orange { height: 140px; }
+.content { flex: 1; padding: 20px; }
+.section-card { background: white; border-radius: 18px; padding: 20px; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+.section-card h4 { margin: 0 0 15px; font-size: 14px; color: #444; }
+.subject-row { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.subj-name { width: 80px; font-size: 13px; color: #555; }
+.subj-bar { flex: 1; height: 10px; background: #f0f0f0; border-radius: 10px; overflow: hidden; }
+.subj-fill { height: 100%; background: var(--orange-grad); border-radius: 10px; }
+.subj-pct { width: 35px; font-size: 12px; color: #FF6B6B; font-weight: 600; text-align: right; }
+.chart-bars { display: flex; align-items: flex-end; gap: 10px; height: 140px; padding: 10px 0; }
+.bar { flex: 1; background: var(--orange-grad); border-radius: 6px 6px 0 0; position: relative; }
+.bar-label { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 9px; color: #999; }
+.bar-val { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 10px; color: #FF6B6B; font-weight: 600; }
+.rate-center { text-align: center; padding: 20px; }
+.rate-big { font-size: 56px; font-weight: 700; color: #FEB47B; }
+.rate-bar { height: 10px; background: #f0f0f0; border-radius: 10px; overflow: hidden; margin: 10px 0; }
+.rate-fill { height: 100%; background: var(--orange-grad); border-radius: 10px; }
+.rate-desc { font-size: 12px; color: #bbb; }

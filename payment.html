@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ชำระเงิน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange"><a href="javascript:history.back()" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a><div class="header-title">ชำระเงิน</div></div>
+    <div class="content"><div class="qr-card"><div class="pay-label">ชำระเงินผ่านพร้อมเพย์ (PromptPay)</div><div class="qr-wrapper"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/PromptPay-logo.png" class="promptpay-logo"><img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=PROMPTPAY_0888888888" class="qr-image"></div><div class="price-section"><div class="price-row"><span style="font-size:18px;color:#444;">ยอดชำระสุทธิ</span><span class="price-value" id="amtDisplay"></span></div><p class="note">โอนเงินเข้าบัญชีพร้อมเพย์ข้างต้นแล้ว<br>กรุณากดปุ่มด้านล่างเพื่อแจ้งโอนเงิน</p></div></div><button class="btn-confirm" onclick="toSuccess()">ยืนยันการชำระเงิน</button></div>
+</div>
+<script src="payment.java"></script>
+</body>
+</html>

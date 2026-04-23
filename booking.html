@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตรวจสอบการจอง</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange"><a href="javascript:history.back()" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a><h2 style="margin:0; font-size:18px;">ตรวจสอบการจอง</h2></div>
+    <div class="step-bar"><div class="step active"><i class="fa-solid fa-check"></i></div><div class="step-line fill"></div><div class="step active">2</div><div class="step-line"></div><div class="step">3</div></div>
+    <div class="booking-card" id="bookingDetail"></div>
+    <div style="padding:0 20px 10px;"><span style="font-size:14px;color:#666;">ช่องทางการชำระเงิน</span></div>
+    <div class="payment-option"><div class="pay-icon"><i class="fa-solid fa-qrcode"></i></div><div style="flex:1"><div style="font-size:14px;font-weight:500;">Thai QR / PromptPay</div><div style="font-size:11px;color:#aaa;">ไม่มีค่าธรรมเนียมเพิ่มเติม</div></div><i class="fa-solid fa-circle-check" style="color:var(--soft-red)"></i></div>
+    <div class="footer"><button class="btn-confirm" onclick="goToPayment()">ยืนยันการจองเรียน <i class="fa-solid fa-arrow-right-long"></i></button></div>
+</div>
+<script src="booking.java"></script>
+</body>
+</html>

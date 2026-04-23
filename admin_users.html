@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>จัดการผู้ใช้</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="admin_users.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange" style="display:flex; justify-content:space-between; align-items:center;">
+        <div style="font-size:22px;font-weight:500;">จัดการผู้ใช้</div>
+        <button onclick="location.href='login.html?logout=1'" style="background:rgba(255,255,255,0.25); border:none; color:white; padding:8px 14px; border-radius:10px; font-size:12px; cursor:pointer; font-family:'Prompt';"><i class="fa-solid fa-right-from-bracket"></i> ออกจากระบบ</button>
+    </div>
+    <div class="filter-tabs" id="filterTabs"></div>
+    <div class="content" id="userList"></div>
+    <div class="bottom-nav">
+        <a href="admin_dashboard.html"><i class="fa-solid fa-home"></i></a>
+        <a href="admin_users.html" class="active"><i class="fa-solid fa-users"></i></a>
+        <a href="admin_analytics.html"><i class="fa-solid fa-chart-bar"></i></a>
+        <a href="admin_activity.html"><i class="fa-solid fa-bell"></i></a>
+    </div>
+</div>
+<script src="admin_users.java"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+:root { --orange-grad: linear-gradient(180deg, #FF6B6B 0%, #FEB47B 100%); --soft-red: #FF6B6B; }
+* { box-sizing: border-box; font-family: 'Prompt', sans-serif; }
+body { margin: 0; background: #333; display: flex; justify-content: center; min-height: 100vh; }
+.mobile-container { width: 100%; max-width: 414px; min-height: 100vh; background: #F9F9F9; display: flex; flex-direction: column; }
+.header-orange { background: var(--orange-grad); height: 200px; border-radius: 0 0 50px 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; position: relative; z-index: 2; }
+.back-btn { position: absolute; left: 20px; top: 40px; color: white; font-size: 22px; text-decoration: none; }
+.header-title { font-size: 24px; font-weight: 500; margin-top: 10px; }
+.content { flex: 1; padding: 30px 25px; }
+.input-group { margin-bottom: 18px; }
+.input-label { display: block; margin-bottom: 6px; font-size: 14px; color: #555; }
+.input-field { width: 100%; padding: 14px 18px; border-radius: 12px; border: 1px solid #E0E0E0; background: white; font-size: 15px; outline: none; }
+.input-field:focus { border-color: #FF6B6B; }
+.role-selector { display: flex; gap: 10px; margin-bottom: 20px; }
+.role-btn { flex: 1; padding: 12px; border-radius: 12px; border: 2px solid #eee; background: white; text-align: center; font-size: 14px; color: #888; cursor: pointer; }
+.role-btn.active { border-color: #FF6B6B; color: #FF6B6B; background: #FFF5F5; }
+.btn-register { width: 100%; background: #FF6B6B; color: white; border: none; padding: 16px; border-radius: 12px; font-size: 18px; font-weight: 500; cursor: pointer; margin-top: 10px; }
+.login-text { margin-top: 20px; font-size: 14px; color: #888; text-align: center; }
+.login-text a { color: #FF8585; text-decoration: none; font-weight: 500; }
+.msg-error { padding: 12px; border-radius: 10px; text-align: center; font-size: 13px; margin-bottom: 15px; background: #FFEBEE; color: #C62828; display: none; }
